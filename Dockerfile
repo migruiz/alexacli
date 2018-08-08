@@ -1,10 +1,11 @@
 FROM node:8.11.3-slim
 
+RUN apt-get update && apt-get install -yqq --no-install-recommends build-essential python-dev 
 
 
 
-RUN npm -g config set user root
-RUN npm install -g ask-cli
+RUN npm -g config set user root || travis_terminate 1
+RUN npm install -g ask-cli || travis_terminate 1
 
 
 VOLUME /root
