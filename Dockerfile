@@ -15,6 +15,4 @@ VOLUME /root
 VOLUME /code
 WORKDIR /code
 
-RUN chmod 777 /deploy.sh
-
-ENTRYPOINT /deploy.sh
+ENTRYPOINT ENTRYPOINT ["ask","deploy","--force"]
