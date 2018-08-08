@@ -18,5 +18,4 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_83630750896a_key -iv $encrypted_83630750896a_iv
   -in alexasecrets.tar.enc -out alexasecrets.tar -d
 - tar xvf alexasecrets.tar
-- cd alexasecrets
-- ls
+- ls alexasecrets/.aws
