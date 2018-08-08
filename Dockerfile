@@ -4,8 +4,8 @@ RUN apt-get update && apt-get install -yqq --no-install-recommends curl build-es
 
 
 
-
-
+RUN npm -g config set user root
+RUN npm install -g ask-cli
 
 
 
