@@ -16,6 +16,5 @@ VOLUME /code
 WORKDIR /code
 
 RUN chmod 777 /deploy.sh
-CMD /deploy.sh
 
-ENTRYPOINT /bin/bash
+ENTRYPOINT ./deploy.sh
