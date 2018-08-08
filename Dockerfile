@@ -14,4 +14,4 @@ VOLUME /root
 VOLUME /code
 WORKDIR /code
 
-ENTRYPOINT ENTRYPOINT ["/usr/local/bin/ask","deploy","--force"]
+ENTRYPOINT ["/usr/local/bin/ask"]
