@@ -9,3 +9,10 @@ RUN npm install -g ask-cli
 
 
 
+VOLUME /root
+
+# Generally the current working dir will be used as the repo volume
+VOLUME /code
+WORKDIR /code
+
+ENTRYPOINT ["ask"]
