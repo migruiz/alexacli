@@ -13,7 +13,8 @@ COPY uploadlambda.sh  /uploadlambda.sh
 RUN chmod +x /uploadlambda.sh
 
 
-VOLUME /root
+VOLUME /root/.aws
+VOLUME /root/.ask
 
 # Generally the current working dir will be used as the repo volume
 VOLUME /code
