@@ -2,7 +2,6 @@
 cd /code/lambda
 /usr/local/bin/npm install
 /usr/bin/zip -X -r   ../lambda.zip *
-ls ~/.local/bin
 /root/.local/bin/aws lambda update-function-code --function-name $1 --zip-file  fileb:///code/lambda.zip
 
 
