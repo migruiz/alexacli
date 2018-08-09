@@ -9,8 +9,16 @@ RUN /root/.local/bin/pip install awscli --upgrade --user || travis_terminate 1
 RUN npm -g config set user root || travis_terminate 1
 RUN npm install -g ask-cli || travis_terminate 1
 
+RUN npm install -g typescript || travis_terminate 1
+
 COPY uploadlambda.sh  /uploadlambda.sh
 RUN chmod +x /uploadlambda.sh
+
+COPY uploadlambdaTS.sh  /uploadlambdaTS.sh
+RUN chmod +x /uploadlambdaTS.sh
+
+
+
 
 
 VOLUME /root/.aws
